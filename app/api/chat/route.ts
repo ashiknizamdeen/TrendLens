@@ -35,7 +35,7 @@ function checkChatRateLimit(ip: string): boolean {
 export async function POST(req: NextRequest) {
   try {
     // Rate limiting
-    const ip = req.ip || req.headers.get('x-forwarded-for') || 'unknown'
+    const ip = req.headers.get('x-forwarded-for') || req.headers.get('x-real-ip') || 'unknown'
     if (!checkChatRateLimit(ip)) {
       return NextResponse.json(
         { error: 'Rate limit exceeded. Please slow down.' },
