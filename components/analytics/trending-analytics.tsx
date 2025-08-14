@@ -1,13 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import { BarChart3, TrendingUp, Eye, MessageCircle, Share, Calendar, Users } from 'lucide-react'
+import { BarChart3, TrendingUp, Eye, MessageCircle, Share, Users } from 'lucide-react'
 import { useNewsStore } from '@/store/news-store'
 
 export default function TrendingAnalytics() {
   const [isOpen, setIsOpen] = useState(false)
-  const [isClosing, setIsClosing] = useState(false)
-  const { analytics, trendingTopics, articles } = useNewsStore()
+  const [, setIsClosing] = useState(false)
+  const { trendingTopics, articles } = useNewsStore()
 
   const handleClose = () => {
     setIsClosing(true)

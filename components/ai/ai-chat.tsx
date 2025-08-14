@@ -142,9 +142,9 @@ export default function AIChat() {
                   )}
                   <div className="text-xs mt-3 space-y-1">
                     <div>Try asking:</div>
-                    <div>"Summarize this article"</div>
-                    <div>"What's the background on this topic?"</div>
-                    <div>"How does this compare to similar stories?"</div>
+                    <div>&quot;Summarize this article&quot;</div>
+                    <div>&quot;What&apos;s the background on this topic?&quot;</div>
+                    <div>&quot;How does this compare to similar stories?&quot;</div>
                   </div>
                 </div>
               )}

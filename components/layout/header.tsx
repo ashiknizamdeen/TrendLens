@@ -1,7 +1,7 @@
 'use client'
 
 import { Search, Moon, Sun, Filter, ChevronDown, Bookmark, RefreshCw } from 'lucide-react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useTheme } from '@/components/providers/theme-provider'
 import { useNewsStore } from '@/store/news-store'
 import TrendingAnalytics from '@/components/analytics/trending-analytics'

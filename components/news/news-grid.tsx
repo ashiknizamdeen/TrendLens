@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { ChevronRight, ChevronLeft, Trash2 } from 'lucide-react'
 import { useNewsStore } from '@/store/news-store'
 import { Article } from '@/types/article'
@@ -28,7 +28,7 @@ export default function NewsGrid() {
     clearSavedArticles
   } = useNewsStore()
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
-  const [isTransitioning, setIsTransitioning] = useState(false)
+  const [, setIsTransitioning] = useState(false)
   const [showArticle, setShowArticle] = useState(false)
   const [trendingScrollPosition, setTrendingScrollPosition] = useState(0)
 

@@ -9,7 +9,7 @@ import { useNewsStore } from '@/store/news-store'
 
 export default function HomePage() {
   const [mounted, setMounted] = useState(false)
-  const { fetchNews, loading } = useNewsStore()
+  const { fetchNews } = useNewsStore()
 
   useEffect(() => {
     setMounted(true)

@@ -1,0 +1,73 @@
+[07:27:43.027] Running build in Washington, D.C., USA (East) – iad1
+[07:27:43.027] Build machine configuration: 2 cores, 8 GB
+[07:27:43.041] Cloning github.com/ashiknizamdeen/TrendLens (Branch: main, Commit: 80b7be0)
+[07:27:43.276] Previous build caches not available
+[07:27:43.384] Cloning completed: 343.000ms
+[07:27:43.694] Running "vercel build"
+[07:27:44.135] Vercel CLI 44.7.3
+[07:27:44.511] Installing dependencies...
+[07:27:58.644] 
+[07:27:58.645] added 403 packages in 14s
+[07:27:58.645] 
+[07:27:58.646] 144 packages are looking for funding
+[07:27:58.646]   run `npm fund` for details
+[07:27:58.695] Detected Next.js version: 15.4.6
+[07:27:58.699] Running "npm run build"
+[07:27:58.854] 
+[07:27:58.855] > trendlens@0.1.0 build
+[07:27:58.855] > next build
+[07:27:58.855] 
+[07:27:59.697] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[07:27:59.698] This information is used to shape Next.js' roadmap and prioritize features.
+[07:27:59.699] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[07:27:59.699] https://nextjs.org/telemetry
+[07:27:59.699] 
+[07:27:59.801]    ▲ Next.js 15.4.6
+[07:27:59.802] 
+[07:27:59.830]    Creating an optimized production build ...
+[07:28:13.147]  ✓ Compiled successfully in 9.0s
+[07:28:13.153]    Linting and checking validity of types ...
+[07:28:17.533] 
+[07:28:17.533] Failed to compile.
+[07:28:17.546] 
+[07:28:17.546] ./app/api/chat/route.ts
+[07:28:17.546] 100:25  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+[07:28:17.547] 110:33  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+[07:28:17.547] 127:19  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+[07:28:17.547] 
+[07:28:17.547] ./app/page.tsx
+[07:28:17.547] 12:22  Warning: 'loading' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+[07:28:17.547] 
+[07:28:17.547] ./components/ai/ai-chat.tsx
+[07:28:17.547] 145:26  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[07:28:17.547] 145:49  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[07:28:17.547] 146:26  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[07:28:17.547] 146:31  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+[07:28:17.547] 146:63  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[07:28:17.548] 147:26  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[07:28:17.548] 147:68  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+[07:28:17.548] 
+[07:28:17.548] ./components/analytics/trending-analytics.tsx
+[07:28:17.548] 4:60  Warning: 'Calendar' is defined but never used.  @typescript-eslint/no-unused-vars
+[07:28:17.548] 9:10  Warning: 'isClosing' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+[07:28:17.548] 10:11  Warning: 'analytics' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+[07:28:17.548] 
+[07:28:17.548] ./components/layout/header.tsx
+[07:28:17.548] 4:20  Warning: 'useEffect' is defined but never used.  @typescript-eslint/no-unused-vars
+[07:28:17.548] 
+[07:28:17.548] ./components/news/article-view.tsx
+[07:28:17.548] 75:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[07:28:17.549] 201:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[07:28:17.553] 
+[07:28:17.553] ./components/news/news-card.tsx
+[07:28:17.554] 75:11  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+[07:28:17.554] 
+[07:28:17.554] ./components/news/news-grid.tsx
+[07:28:17.554] 3:20  Warning: 'useEffect' is defined but never used.  @typescript-eslint/no-unused-vars
+[07:28:17.554] 31:10  Warning: 'isTransitioning' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+[07:28:17.554] 
+[07:28:17.554] ./components/ui/input.tsx
+[07:28:17.554] 4:18  Error: An interface declaring no members is equivalent to its supertype.  @typescript-eslint/no-empty-object-type
+[07:28:17.554] 
+[07:28:17.555] info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+[07:28:17.576] Error: Command "npm run build" exited with 1
